@@ -1,3 +1,12 @@
+---
+title: Getting Started
+author: Cotes Chung
+date: 2019-08-09 20:55:00 +0800
+categories: [微博0, 教程1, 教程2]
+tags: [getting started]
+pin: true
+---
+
 <div align="right">
   <a href="https://github.com/cotes2020/jekyll-theme-chirpy#readme">EN</a> |
   <a href="https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/README.zh-CN.md">中文 (简体)</a>
@@ -11,6 +20,8 @@
 </div>
 
 一个采用了最简化、侧边栏、响应式设计的 Jekyll 主题，专注于文本展示，旨在帮助您轻松地记录和分享知识。
+
+模板语言：[liquid](https://liquid.bootcss.com/)
 
 [在线体验 »](https://chirpy.cotes.info)
 
