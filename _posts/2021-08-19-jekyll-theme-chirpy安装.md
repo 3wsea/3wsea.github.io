@@ -217,18 +217,6 @@ $ docker run -it --rm \
 
 若想要更多细节以及更佳的阅读体验，请参阅 [线上教程](https://chirpy.cotes.info/categories/tutorial/)。 与此同时，[Wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki) 也有一份教程的拷贝。请注意，Demo 网站和 Wiki 上的文档都是基于最新的发行版本，而 `master` 分支的功能往往领先于现有文档。
 
-## 参与贡献
-
-三人行必有我师，欢迎提报告 bug, 帮助改进代码质量，或者提交新功能。具体操作规则请参考 [贡献指南](../.github/CONTRIBUTING.md)，谢谢 🙏。
-
-## 鸣谢
-
-这个主题的开发主要基于 [Jekyll](https://jekyllrb.com/) 生态、[Bootstrap](https://getbootstrap.com/)、[Font Awesome](https://fontawesome.com/) 和其他一些出色的工具 (相关文件中可以找到这些工具的版权信息)。头像和图标的设计来自于 [Clipart Max](https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/)。
-
-## 许可证书
-
-本项目开源，基于 [MIT](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE) 许可。
-
 [starter]: https://github.com/cotes2020/chirpy-starter
 [use-starter]: https://github.com/cotes2020/chirpy-starter/generate
 [workflow]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/workflows/pages-deploy.yml.hook
