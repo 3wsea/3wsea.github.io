@@ -20,8 +20,8 @@ pin: true
 </div>
 
 一个采用了最简化、侧边栏、响应式设计的 Jekyll 主题，专注于文本展示，旨在帮助您轻松地记录和分享知识。
-
-模板语言：[liquid](https://liquid.bootcss.com/)
+- 模板语言：[liquid](https://liquid.bootcss.com/)
+- 明天要看：[url](http://ibloodline.com/articles/2014/12/15/jekyll-syntax.html)
 
 [在线体验 »](https://chirpy.cotes.info)
 
