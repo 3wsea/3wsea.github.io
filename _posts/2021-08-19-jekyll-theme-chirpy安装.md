@@ -1,10 +1,9 @@
 ---
-title: Getting Started
-author: Cotes Chung
-date: 2019-08-09 20:55:00 +0800
-categories: [微博0, 教程1, 教程2]
-tags: [getting started]
-pin: true
+title: Chirpy Jekyll主题安装
+date: 2021-08-20 10:43:00 +0800
+categories: [安装, 博客]
+tags: [jekyll]
+pin: false
 ---
 
 <div align="right">
@@ -15,13 +14,10 @@ pin: true
 <div align="center">
   <h1>Chirpy Jekyll Theme</h1>
   <p>
-    
   </p>
 </div>
 
 一个采用了最简化、侧边栏、响应式设计的 Jekyll 主题，专注于文本展示，旨在帮助您轻松地记录和分享知识。
-- 模板语言：[liquid](https://liquid.bootcss.com/)
-- 明天要看：[url](http://ibloodline.com/articles/2014/12/15/jekyll-syntax.html)
 
 [在线体验 »](https://chirpy.cotes.info)
 
