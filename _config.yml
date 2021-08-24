@@ -30,10 +30,10 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://www.jiazhenjiang.com'
 
 github:
-  username: 3wsea             # change to your github username
+  username: ''             # change to your github username
 
 twitter:
-  username: 3wsea            # change to your twitter username
+  username: ''            # change to your twitter username
 
 social:
   # Change to your full name.
