@@ -6,6 +6,8 @@
 
   <div class="access">
 
+    {% include weather.html %}
+
   {% include update-list.html %}
 
   {% if update_list.size > 0 %}
@@ -41,6 +43,8 @@
       </div>
     </div>
   {% endif %}
+
+
   </div> <!-- .access -->
 
   {% if include.toc %}
