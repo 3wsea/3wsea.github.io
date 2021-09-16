@@ -68,6 +68,47 @@ JMeter也是由java编写的，而java运行时需要先编译，然后才可以
     4、BeanShell监听器：BeanSell Listener  
     5、BeanShell定时器：BeanSell Timer  
     6、BeanShell断言：BeanSell断言
+    
+**BeanShell默认的内置变量和方法**
+
+通过BeanShell可以对请求数据、响应数据或环境变量进行更加灵活的处理和判断。
+
+Beanshell有一些默认的内置变量和方法，用户可以通过这些变量与JMeter进行交互，比如:
+
+-   prInt：非GUI模式下打印信息（输出信息到stdout）
+-   log：输出信息到日志（文件）
+    -   log.debu("调试信息")
+    -   log.info("响应状态码" + ResponseCode)
+    -   log.warn("警告信息")
+    -   log.error("出错信息")
+-   ResponseCode：响应状态码（String类型）
+-   ResponseHeaders：响应头（String类型）
+-   prev：获取当前请求结果
+    -   prew.getResponseDataAsString()：获取响应体数据（String类型)
+    -   prew.getResponseCode()：获取状态码（同ResponseCode，String类型）
+-   vars: 操作jmeter变量
+    -   String var1 = vars.get("变量名")：获取变量的值（假设为String类型）
+    -   vars.put("变量名", 变量值)：设置变量值
+-   props: 操作JMeter属性
+    -   props.get(String,String) 可以获取Jmeter中已经生成的属性
+    -   props.put(String,String) 可以创建和更新Jmeter属性
+-   ctx：获取当前线程上下文数据（可获取所有信息）
+    -   ctx.getVariables("变量名")：获取变量值（同vars.get())
+    -   ctx.setVariables("变量名", "变量值")：设置变量（同vars.put())
+    -   ctx.getProperties("属性名")：获取属性值（同props.get()）
+    -   ctx.setProperties("属性名","属性值")：设置属性（同props.put()）
+    -   ctx.getPreviousResult()：获取当前请求结果同（prev）
+    -   ctx.getCurrentSampler()：获取当前采样器
+    -   ctx.getPreviousSampler()：获取前一采样器
+    -   ctx.getThreadNum()：获取线程数
+    -   ctx.getThreadGroup()：获取线程组
+    -   ctx. getThread()：获取当前线程
+    -   ctx.getEngine()：获取引擎
+    -   ctx.isSamplingStarted()：判断采样器是否启动
+    -   ctx.isRecording()：判断是否开启录制
+    -   ctx.getSamplerContext()：获取采样器山下文数据
+
+> ctx详细API可参考：[JMeter上下文](https://jmeter.apache.org/api/org/apache/jmeter/threads/JMeterContext.html){:target="_blank"}
 
 **BeanShell前置处理器、BeanShell取样器、BeanShell后置处理器，它们之间的区别**：
 
