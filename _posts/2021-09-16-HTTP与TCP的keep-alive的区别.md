@@ -17,7 +17,7 @@ pin: false
 
 接下来，分别说说它们。
 
-### **HTTP 的 Keep-Alive**
+## **HTTP 的 Keep-Alive**
 
 HTTP 协议采用的是「请求-应答」的模式，也就是客户端发起了请求，服务端才会返回响应，一来一回这样子。
 
@@ -97,7 +97,7 @@ HTTP 长连接不仅仅减少了 TCP 连接资源的开销，而且这给 **HTTP
 
 HTTP 长连接超时
 
-### **TCP 的 Keepalive**
+## **TCP 的 Keepalive**
 
 TCP 的 Keepalive 这东西其实就是 **TCP 的保活机制**，它的工作原理如下。
 
@@ -118,7 +118,7 @@ TCP 保活机制
 
 注意，应用程序若想使用 TCP 保活机制需要通过 socket 接口设置 `SO_KEEPALIVE` 选项才能够生效，如果没有设置，那么就无法使用 TCP 保活机制。
 
-### **总结**
+## **总结**
 
 HTTP 的 Keep-Alive 也叫 HTTP 长连接，该功能是由「应用程序」实现的，可以使得用同一个 TCP 连接来发送和接收多个 HTTP 请求/应答，减少了 HTTP 短连接带来的多次 TCP 连接建立和释放的开销。
 
